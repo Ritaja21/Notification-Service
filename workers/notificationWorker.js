@@ -4,8 +4,8 @@ const { Worker } = require('bullmq');
 const connection = require("../config/redis");
 const Notification = require("../models/Notification");
 
-const connectDB = require('../config/db'); // ✅ Add this
-connectDB(); // ✅ Call it to connect to MongoDB
+const connectDB = require('../config/db');
+connectDB(); 
 
 const worker = new Worker('notifications', async (job) => {
     const { userId, type, message, email, phone } = job.data;
