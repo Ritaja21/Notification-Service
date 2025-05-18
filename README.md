@@ -193,6 +193,15 @@ notification-service/
 ├── server.js
 └── package.json
 ```
+
+## 🌍 Deployment & DevOps
+
+- Backend hosted on [Render](https://notification-service-wbvj.onrender.com)
+- Auto-deployed from GitHub on every push
+- Environment variables managed securely using Render’s dashboard
+- Redis Cloud used for queue system (BullMQ)
+- MongoDB Atlas for persistent in-app notifications
+
 ## Author
  Ritaja Tarafder 
 - [GitHub](https://github.com/Ritaja21)
